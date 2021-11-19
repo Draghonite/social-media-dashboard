@@ -1,3 +1,30 @@
 /* variables */
 
-$background-color: yellow;
+/* colors */
+$color-lime-green: hsl(163, 72%, 41%);
+$color-bright-red: hsl(356, 69%, 56%);
+$color-facebook: hsl(208, 92%, 53%);
+$color-twitter: hsl(203, 89%, 53%);
+$color-instagram: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$color-youtube: hsl(348, 97%, 39%);
+
+/* toggle */
+$toggle-dark: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+$toggle-light: hsl(230, 22%, 74%);
+
+/* neutral - dark */
+$neutral-bg-dark-very-dark-blue: hsl(230, 17%, 14%);
+$neutral-bg-top-pattern-dark-very-dark-blue: hsl(232, 19%, 15%);
+$neutral-card-bg-dark-saturated-blue: hsl(228, 28%, 20%);
+$neutral-text-dark-desaturated-blue: hsl(228, 34%, 66%);
+$neutral-text-dark-white: hsl(0, 0%, 100%);
+
+/* neutral - light */
+$neutral-bg-light: hsl(0, 0%, 100%);
+$neutral-bg-top-light: hsl(225, 100%, 98%);
+$neutral-card-bg-light: hsl(227, 47%, 96%);
+$neutral-text-light: hsl(228, 12%, 44%);
+$neutral-text-light-dark: hsl(230, 17%, 14%);
+
+/* typography */
+$text-card-headings-large-font-size: 14px;

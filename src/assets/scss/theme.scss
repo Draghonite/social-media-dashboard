@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 @import './variables';
 @import './theme.dark.scss';
 @import './theme.light.scss';
 
-/* theme */
+/* theme -- global styles (non-dark/-light) */
+body {
+    font-family: Inter, sans-serif;
+}
+.theme {
+    height: 100vh;
 
+    header {
+        h2 {
+            color: $neutral-text-dark-desaturated-blue;
+        }
+
+        input[type=range] {
+            background: $toggle-dark;
+        }
+    }
+}

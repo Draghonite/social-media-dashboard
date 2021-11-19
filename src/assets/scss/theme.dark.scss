@@ -1,5 +1,13 @@
 @import './variables';
 
 /* dark theme */
-$background-color: #000;
-$color: #ccc;
+.theme-dark {
+    background-color: $neutral-bg-dark-very-dark-blue;
+    color: $neutral-text-dark-white;
+
+    header {
+        input[type=range]::-webkit-slider-thumb {
+            background-color: $neutral-card-bg-dark-saturated-blue;
+        }
+    }
+}
