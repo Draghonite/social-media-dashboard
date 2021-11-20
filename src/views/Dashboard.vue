@@ -1,7 +1,9 @@
 <template>
     <div class="dashboard theme" :class="appTheme">
-        <app-header :theme="theme" :followers="followers" v-on:themeChanged="setTheme" />
-        
+        <div class="top-part"></div>
+        <div class="content">
+            <app-header :theme="theme" :followers="followers" v-on:themeChanged="setTheme" />
+        </div>
     </div>
 </template>
 

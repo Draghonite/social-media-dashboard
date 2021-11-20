@@ -6,10 +6,24 @@
     color: $neutral-text-light-dark;
 
     header {
+        h2 {
+            color: $neutral-text-light;
+            font-weight: 600;
+        }
+
         .theme-switcher {
             label {
                 color: $neutral-text-light;
+                font-weight: 500;
             }
+        }
+
+        input[type=range] {
+            background-color: $toggle-light;
+        }
+
+        input[type=range]:hover {
+            background: $toggle-dark;
         }
 
         input[type=range]::-webkit-slider-thumb {
