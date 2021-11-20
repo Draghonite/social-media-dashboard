@@ -5,6 +5,10 @@
     background-color: $neutral-bg-light;
     color: $neutral-text-light-dark;
 
+    .top-part {
+        background-color: $neutral-bg-top-light;
+    }
+
     header {
         h2 {
             color: $neutral-text-light;
