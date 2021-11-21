@@ -5,11 +5,11 @@
             <span class="user-name">{{social.Username}}</span>
         </div>
         <div class="followers">
-            <span class="value">{{social.Followers}}</span>
-            <span class="label">FOLLOWERS</span>
+            <span class="value">{{formatNumber(social.Followers)}}</span>
+            <span class="label">{{social.FollowersDisplay}}</span>
         </div>
         <div class="change" :class="followersChangeStyle">    
-            <span class="icon" :class="followersChangeIcon"></span> {{followersChangeAmount}} Today
+            <span class="icon" :class="followersChangeIcon"></span> {{Math.abs(followersChangeAmount)}} Today
         </div>
     </div>
 </template>
@@ -27,8 +27,19 @@ export default defineComponent({
         }
     },
     setup(props, {emit}) {
+        const formatNumber = (input: number) => {
+            // reformat for thousands and millions
+            if (!input || input === 0) { return "0" }
+            if (input >= 10000 && input <= 999999) {
+                return (input/1000)+"k";
+            } else if (input >= 1000000) {
+                return (input/1000000)+"m";
+            } else {
+                return input.toString();
+            }
+        };
         return {
-            
+            formatNumber
         }
     },
     computed: {
@@ -39,7 +50,6 @@ export default defineComponent({
             return this.followersChangeAmount > 1 ? "change-up" : "change-down";
         },
         followersChangeAmount() {
-            // TOOD: calculate change betwen Followers and FollowersPrevious
             return this.social.Followers - this.social.FollowersPrevious;
         },
         socialColor() {

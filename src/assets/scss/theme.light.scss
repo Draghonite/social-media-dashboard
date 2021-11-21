@@ -36,6 +36,39 @@
     }
 
     .social-cards {
+        .social-card {
+            .user-name {
+                color: $neutral-bg-dark-very-dark-blue;
+            }
+            .followers .label {
+                color: $neutral-text-light;
+            }
+        }
+
+        & .facebook {
+            background: $color-facebook-bg-light;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .instagram {
+            background: $color-instagram-bg-light;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .twitter {
+            background: $color-twitter-bg-light;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .youtube {
+            background: $color-youtube-bg-light;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
         & .facebook:hover {
             background: $color-facebook-bg-light-hover; 
             background-clip: padding-box, border-box;

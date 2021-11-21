@@ -1,5 +1,8 @@
 /* variables */
 
+$max-content-width-destop: 1440px;
+$max-content-width-mobile: 375px;
+
 /* toggle */
 $toggle-dark: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
 $toggle-light: hsl(230, 22%, 74%);
@@ -25,14 +28,22 @@ $text-card-headings-large-font-size: 14px;
 $color-lime-green: hsl(163, 72%, 41%);
 $color-bright-red: hsl(356, 69%, 56%);
 $color-facebook: hsl(208, 92%, 53%);
-$color-facebook-bg: linear-gradient(to right, $neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, $color-facebook, $color-facebook);
-$color-facebook-bg-light-hover: linear-gradient(to right, $toggle-light, $toggle-light), linear-gradient(to right, $color-facebook, $color-facebook);
+$color-facebook-bg-light: linear-gradient($neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, $color-facebook, $color-facebook);
+$color-facebook-bg-dark: linear-gradient($neutral-card-bg-dark-saturated-blue, $neutral-card-bg-dark-saturated-blue), linear-gradient(to right, $color-facebook, $color-facebook);
+$color-facebook-bg-light-hover: linear-gradient($toggle-light, $toggle-light), linear-gradient(to right, $color-facebook, $color-facebook);
+$color-facebook-bg-dark-hover: linear-gradient($neutral-card-bg-dark-saturated-blue, $neutral-card-bg-dark-saturated-blue), linear-gradient(to right, $color-facebook, $color-facebook);
 $color-twitter: hsl(203, 89%, 53%);
-$color-twitter-bg: linear-gradient(to right, $neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, $color-twitter, $color-twitter);
-$color-twitter-bg-light-hover: linear-gradient(to right, $toggle-light, $toggle-light), linear-gradient(to right, $color-twitter, $color-twitter);
-$color-instagram: linear-gradient(to right, $neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
-$color-instagram-bg: linear-gradient(to right, $neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
-$color-instagram-bg-light-hover: linear-gradient(to right, $toggle-light, $toggle-light), linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$color-twitter-bg-light: linear-gradient($neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, $color-twitter, $color-twitter);
+$color-twitter-bg-dark: linear-gradient($neutral-card-bg-dark-saturated-blue, $neutral-card-bg-dark-saturated-blue), linear-gradient(to right, $color-twitter, $color-twitter);
+$color-twitter-bg-light-hover: linear-gradient($toggle-light, $toggle-light), linear-gradient(to right, $color-twitter, $color-twitter);
+$color-twitter-bg-dark-hover: linear-gradient($neutral-card-bg-dark-saturated-blue, $neutral-card-bg-dark-saturated-blue), linear-gradient(to right, $color-twitter, $color-twitter);
+$color-instagram: linear-gradient($neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$color-instagram-bg-light: linear-gradient($neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$color-instagram-bg-dark: linear-gradient($neutral-card-bg-dark-saturated-blue, $neutral-card-bg-dark-saturated-blue), linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$color-instagram-bg-light-hover: linear-gradient($toggle-light, $toggle-light), linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$color-instagram-bg-dark-hover: linear-gradient($neutral-card-bg-dark-saturated-blue, $neutral-card-bg-dark-saturated-blue), linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
 $color-youtube: hsl(348, 97%, 39%);
-$color-youtube-bg: linear-gradient(to right, $neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, $color-youtube, $color-youtube);
-$color-youtube-bg-light-hover: linear-gradient(to right, $toggle-light, $toggle-light), linear-gradient(to right, $color-youtube, $color-youtube);
+$color-youtube-bg-light: linear-gradient($neutral-bg-top-light, $neutral-bg-top-light), linear-gradient(to right, $color-youtube, $color-youtube);
+$color-youtube-bg-dark: linear-gradient($neutral-card-bg-dark-saturated-blue, $neutral-card-bg-dark-saturated-blue), linear-gradient(to right, $color-youtube, $color-youtube);
+$color-youtube-bg-light-hover: linear-gradient($toggle-light, $toggle-light), linear-gradient(to right, $color-youtube, $color-youtube);
+$color-youtube-bg-dark-hover: linear-gradient($neutral-card-bg-dark-saturated-blue, $neutral-card-bg-dark-saturated-blue), linear-gradient(to right, $color-youtube, $color-youtube);

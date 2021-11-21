@@ -16,7 +16,7 @@
 
         .theme-switcher {
             label {
-                color: $neutral-text-dark-desaturated-blue;
+                color: $neutral-text-dark-white;
             }
         }
 
@@ -40,9 +40,61 @@
     }
 
     .social-cards {
-        // .social-card {
-        //     border-top: 3px solid red;
-        //     background-color: #ccc;
-        // }
+        .social-card {
+            .user-name {
+                color: $neutral-text-dark-desaturated-blue;
+            }
+            .followers .label {
+                color: $neutral-text-dark-desaturated-blue;
+            }
+        }
+
+        & .facebook {
+            background: $color-facebook-bg-dark;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .instagram {
+            background: $color-instagram-bg-dark;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .twitter {
+            background: $color-twitter-bg-dark;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .youtube {
+            background: $color-youtube-bg-dark;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .facebook:hover {
+            background: $color-facebook-bg-dark-hover; 
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .instagram:hover {
+            background: $color-instagram-bg-dark-hover;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .twitter:hover {
+            background: $color-twitter-bg-dark-hover;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .youtube:hover {
+            background: $color-youtube-bg-dark-hover;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
     }
 }

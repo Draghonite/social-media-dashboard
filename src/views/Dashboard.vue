@@ -35,10 +35,10 @@ export default defineComponent({
             "YouTube": 3
         };
         const socialNetworkProfiles: Array<ISocialMediaProfile> = [
-            { SocialNetworkName: "Facebook", SocialNetworkLogo: "icon-facebook", Username: "@nathanf", Followers: 1987, FollowersPrevious: (1987-12), Likes: 52, LikesPrevious: (52/(1+.02)), PageViews: 87, PageViewsPrevious: (87/(1-.03)) } as IFacebookProfile,
-            { SocialNetworkName: "Instagram", SocialNetworkLogo: "icon-instagram", Username: "@realnathanf", Followers: 11000, FollowersPrevious: (11000-1099), Likes: 5462, LikesPrevious: (5462/22.57), ProfileViews: 52000, ProfileViewsPrevious: (52000/13.75) } as IInstagramProfile,
-            { SocialNetworkName: "Twitter", SocialNetworkLogo: "icon-twitter", Username: "@nathanf", Followers: 1044, FollowersPrevious: (1044-99), Likes: 507, LikesPrevious: (507/5.53), Retweets: 117, RetweetsPrevious: (117/3.03) } as ITwitterProfile,
-            { SocialNetworkName: "YouTube", SocialNetworkLogo: "icon-youtube", Username: "Nathan F.", Followers: 8239, FollowersPrevious: (8239+144), Likes: 107, LikesPrevious: (107/(1-.19)) } as IYouTubeProfile
+            { SocialNetworkName: "Facebook", SocialNetworkLogo: "icon-facebook", Username: "@nathanf", Followers: 1987, FollowersPrevious: (1987-12), FollowersDisplay: "FOLLOWERS", Likes: 52, LikesPrevious: (52/(1+.02)), PageViews: 87, PageViewsPrevious: (87/(1-.03)) } as IFacebookProfile,
+            { SocialNetworkName: "Instagram", SocialNetworkLogo: "icon-instagram", Username: "@realnathanf", Followers: 11000, FollowersPrevious: (11000-1099), FollowersDisplay: "FOLLOWERS", Likes: 5462, LikesPrevious: (5462/22.57), ProfileViews: 52000, ProfileViewsPrevious: (52000/13.75) } as IInstagramProfile,
+            { SocialNetworkName: "Twitter", SocialNetworkLogo: "icon-twitter", Username: "@nathanf", Followers: 1044, FollowersPrevious: (1044-99), FollowersDisplay: "FOLLOWERS", Likes: 507, LikesPrevious: (507/5.53), Retweets: 117, RetweetsPrevious: (117/3.03) } as ITwitterProfile,
+            { SocialNetworkName: "YouTube", SocialNetworkLogo: "icon-youtube", Username: "Nathan F.", Followers: 8239, FollowersPrevious: (8239+144), FollowersDisplay: "SUBSCRIBERS", Likes: 107, LikesPrevious: (107/(1-.19)) } as IYouTubeProfile
         ];
 
         const setTheme = (newTheme: string) => {

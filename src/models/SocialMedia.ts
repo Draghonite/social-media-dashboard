@@ -4,6 +4,7 @@ export interface ISocialMediaProfile {
     Username: string
     Followers: number
     FollowersPrevious: number
+    FollowersDisplay: string
     Likes: number
     LikesPrevious: number
 }

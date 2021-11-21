@@ -10,6 +10,7 @@ body {
 }
 .theme {
     height: 100vh;
+    margin: auto;
 }
 
 .top-part {
@@ -22,11 +23,49 @@ body {
 
 .content {
     position: relative;
-    margin: 20px 30px;
+    margin: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: $max-content-width-destop;
+    overflow: auto;
 }
 .change-up {
     color: $color-lime-green;
 }
 .change-down {
     color: $color-bright-red;
+}
+
+@media screen and (max-width: 1000) {
+    .content {
+        margin-left: 40px;
+        margin-left: 40px;
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: $max-content-width-mobile) {
+    .content {
+        margin-left: 30px;
+        margin-right: 30px;
+
+        header {
+            flex-direction: column;
+            .theme-switcher {
+                border-top: 1px solid $neutral-text-dark-desaturated-blue;
+                width: 100%;
+                margin: 1em 0;
+                padding-top: 1em;
+                label {
+                    font-weight: 600;
+                }
+                input[type=range] {
+                    max-width: 45px;
+                }
+            }
+        }
+        .social-cards {
+            grid-template-columns: 1fr;
+        }
+    }
 }
