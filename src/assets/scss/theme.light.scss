@@ -34,4 +34,30 @@
             background-color: $neutral-bg-light;
         }
     }
+
+    .social-cards {
+        & .facebook:hover {
+            background: $color-facebook-bg-light-hover; 
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .instagram:hover {
+            background: $color-instagram-bg-light-hover;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .twitter:hover {
+            background: $color-twitter-bg-light-hover;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .youtube:hover {
+            background: $color-youtube-bg-light-hover;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+    }
 }

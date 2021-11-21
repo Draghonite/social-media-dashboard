@@ -109,4 +109,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
+- ()[https://css-tricks.com/gradient-borders-in-css/]
+- ()[https://elmah.io/tools/base64-image-encoder/]
+  - because, let's face it, dealing with SVG files in Vue+TypeScript (and from experience, other frameworks as well) is a bit of a nightmare.  This tool provides a simple conversion of individual *.svg files to base64 strings and the equivalent HTML or CSS syntax ready to use in your project.  Time-saver.
+
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

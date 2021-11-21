@@ -6,13 +6,13 @@
         </div>
         <div class="theme-switcher">
             <label v-on:click="toggleTheme" for="theme-chooser">Dark Mode</label>
-            <input ref="themeChooser" id="theme-chooser" :value="currentTheme" v-on:change="onThemeChanged" type="range" min="1" aria-valuemin="1" max="2" aria-valuemax="2" aria-label="Theme Options" />
+            <input id="theme-chooser" :value="currentTheme" v-on:change="onThemeChanged" type="range" min="1" aria-valuemin="1" max="2" aria-valuemax="2" aria-label="Theme Options" />
         </div>
     </header>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
     props: {
