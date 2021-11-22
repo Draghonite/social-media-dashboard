@@ -93,11 +93,12 @@ header {
                 justify-content: space-between;
             }
             .card-header .field-name {
-                color: $neutral-text-dark-desaturated-blue;
+                color: $neutral-text-light;
+                font-weight: 600;
             }
             .card-body .field-value {
                 font-size: 35px;
-                font-weight: 500;
+                font-weight: 600;
             }
         }
         .followers {
