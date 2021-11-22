@@ -35,14 +35,26 @@
         }
     }
 
-    .social-cards {
-        .social-card {
+    .cards {
+        .card {
             .user-name {
                 color: $neutral-bg-dark-very-dark-blue;
             }
             .followers .label {
                 color: $neutral-text-light;
             }
+        }
+
+        & .card {
+            background: $neutral-bg-top-light;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .card:hover {
+            background: $toggle-light;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
         }
 
         & .facebook {

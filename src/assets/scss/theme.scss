@@ -9,8 +9,10 @@ body {
     font-family: Inter, sans-serif;
 }
 .theme {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     margin: auto;
+    padding-bottom: 40px;
 }
 
 .top-part {
@@ -24,8 +26,6 @@ body {
 .content {
     position: relative;
     margin: auto;
-    margin-left: 40px;
-    margin-right: 40px;
     max-width: $max-content-width-destop;
     overflow: auto;
 }
@@ -36,10 +36,10 @@ body {
     color: $color-bright-red;
 }
 
-@media screen and (max-width: 1000) {
+@media screen and (max-width: $max-content-width-destop) {
     .content {
         margin-left: 40px;
-        margin-left: 40px;
+        margin-right: 40px;
         max-width: 1000px;
     }
 }
@@ -64,7 +64,7 @@ body {
                 }
             }
         }
-        .social-cards {
+        .cards {
             grid-template-columns: 1fr;
         }
     }

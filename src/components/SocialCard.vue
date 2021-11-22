@@ -1,5 +1,5 @@
 <template>
-    <div class="social-card" :class="socialColor">
+    <div class="social-card card" :class="socialColor">
         <div class="card-header">
             <span class="logo" :class="social.SocialNetworkLogo"></span>
             <span class="user-name">{{social.Username}}</span>
@@ -19,14 +19,13 @@ import { defineComponent, PropType } from 'vue';
 import { ISocialMediaProfile } from '../models/SocialMedia';
 
 export default defineComponent({
-  components: { },
     props: {
         social: { 
             type: Object as PropType<ISocialMediaProfile>,
             required: true
         }
     },
-    setup(props, {emit}) {
+    setup(props) {
         const formatNumber = (input: number) => {
             // reformat for thousands and millions
             if (!input || input === 0) { return "0" }
@@ -44,10 +43,10 @@ export default defineComponent({
     },
     computed: {
         followersChangeIcon() {
-            return this.followersChangeAmount > 1 ? "icon-arrow-up" : "icon-arrow-down";
+            return this.followersChangeAmount > 0 ? "icon-arrow-up" : "icon-arrow-down";
         },
         followersChangeStyle() {
-            return this.followersChangeAmount > 1 ? "change-up" : "change-down";
+            return this.followersChangeAmount > 0 ? "change-up" : "change-down";
         },
         followersChangeAmount() {
             return this.social.Followers - this.social.FollowersPrevious;

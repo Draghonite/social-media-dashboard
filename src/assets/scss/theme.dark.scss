@@ -39,14 +39,26 @@
         }
     }
 
-    .social-cards {
-        .social-card {
+    .cards {
+        .card {
             .user-name {
                 color: $neutral-text-dark-desaturated-blue;
             }
             .followers .label {
                 color: $neutral-text-dark-desaturated-blue;
             }
+        }
+
+        & .card {
+            background: $neutral-card-bg-dark-saturated-blue;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+
+        & .card:hover {
+            background: $neutral-card-bg-dark-saturated-blue;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
         }
 
         & .facebook {

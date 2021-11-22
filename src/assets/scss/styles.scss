@@ -52,13 +52,13 @@ header {
         border-radius: 50%;
     }
 }
-.social-cards {
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     margin-bottom: 50px;
 
-    .social-card {
+    .card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -71,7 +71,7 @@ header {
         border-bottom: transparent;
         border-radius: 4px;
 
-        .card-header {
+        &.social-card .card-header {
             display: flex;
             align-items: center;
 
@@ -79,6 +79,25 @@ header {
                 margin-left: .7em;
                 font-size: .7em;
                 font-weight: 600;
+            }
+        }
+        &.social-overview-card {
+            max-height: 120px;
+            padding: 20px;
+            .card-header {
+                margin-bottom: 1em;
+            }
+            .card-header, .card-body {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+            .card-header .field-name {
+                color: $neutral-text-dark-desaturated-blue;
+            }
+            .card-body .field-value {
+                font-size: 35px;
+                font-weight: 500;
             }
         }
         .followers {
