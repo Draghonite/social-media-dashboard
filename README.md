@@ -25,10 +25,10 @@ Users should be able to:
 - Toggle color theme to their preference
 
 ### Screenshot
-<img src="./public/screenshots/screenshot1.png" width="400" title="Dark Screenshot - Desktop" />
-<img src="./public/screenshots/screenshot2.png" width="400" title="Light Screenshot - Desktop" />
-<img src="./public/screenshots/screenshot3.png" width="400" title="Dark Screenshot - Mobile" />
-<img src="./public/screenshots/screenshot4.png" width="400" title="Light Screenshot - Mobile" />
+<img src="./public/screenshots/Screenshot1.png" width="400" title="Dark Screenshot - Desktop" />
+<img src="./public/screenshots/Screenshot2.png" width="400" title="Light Screenshot - Desktop" />
+<img src="./public/screenshots/Screenshot3.png" width="400" title="Dark Screenshot - Mobile" />
+<img src="./public/screenshots/Screenshot4.png" width="400" title="Light Screenshot - Mobile" />
 
 ### Links
 
